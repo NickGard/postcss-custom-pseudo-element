@@ -11,5 +11,6 @@ function run(input, output, opts) {
 }
 
 it('converts pseudo-selector to descendant attribute selector', () => {
-    return run('a::-cpe-foo { }', 'a [data-pseudo="foo"] { }');
+    run('a::-cpe-foo { }', 'a [data-pseudo="foo"] { }');
+    run('.foo .bar::-cpe-baz:hover', '.foo .bar [data-pseudo="baz"]:hover');
 });
