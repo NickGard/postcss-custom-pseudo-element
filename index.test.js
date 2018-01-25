@@ -10,10 +10,6 @@ function run(input, output, opts) {
         });
 }
 
-/* Write tests here
-
-it('does something', () => {
-    return run('a{ }', 'a{ }', { });
+it('converts pseudo-selector to descendant attribute selector', () => {
+    return run('a::-cpe-foo { }', 'a [data-pseudo="foo"] { }');
 });
-
-*/
