@@ -1,0 +1,36 @@
+{
+  "name": "postcss-custom-pseudo-element",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to transform custom pseudo-element selectors into valid CSS selectors",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "pseudo-selector",
+    "component"
+  ],
+  "author": "Nick Gard <nick.gard.dev@gmail.com>",
+  "license": "MIT",
+  "repository": "NickGard/postcss-custom-pseudo-element",
+  "bugs": {
+    "url": "https://github.com/NickGard/postcss-custom-pseudo-element/issues"
+  },
+  "homepage": "https://github.com/NickGard/postcss-custom-pseudo-element",
+  "dependencies": {
+    "postcss": "^6.0.16"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^21.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
